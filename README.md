@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+## Julia 程式語言入門 | 以範例為主
 
-You can use the [editor on GitHub](https://github.com/yaojenkuo/julia-101/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### 簡介
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+這是[郭耀仁](https://www.facebook.com/yaojen.kuo.1)在[台灣大學資訊工程學系資訊系統訓練班](https://www.csie.ntu.edu.tw/train/)所開設的 Julia 程式語言入門課程網頁，課程時數 10 小時。
 
-### Markdown
+### 上課互動工具
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<https://www.sli.do/>
 
-```markdown
-Syntax highlighted code block
+### Facebook 社團
 
-# Header 1
-## Header 2
-### Header 3
+<https://www.facebook.com/groups/csietrainds/>
 
-- Bulleted
-- List
+### 評分標準
 
-1. Numbered
-2. List
+這是一個入門專題班課程，參與學員都可以獲得結業證書。
 
-**Bold** and _Italic_ and `Code` text
+### 課程大綱
 
-[Link](url) and ![Image](src)
-```
+- [關於](00-about.slides.html)
+- [起步走](01-getting-started.slides.html)
+- [資料型態](02-data-types.slides.html)
+- [流程控制](03-control-flow-conditionals.slides.html)
+- [程式封裝：自訂函數]()
+- [程式封裝：自訂結構]()
+- [常用套件]()
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### 延伸閱讀
 
-### Jekyll Themes
+- [Julia 1.1 Documentation](https://docs.julialang.org/en/v1/)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yaojenkuo/julia-101/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### 近期課程錄影清單
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- [312 期 Julia 程式語言入門 | 以範例為主（假日專題班）](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWWndX_ppiDG8KMv6Jft7hm)
