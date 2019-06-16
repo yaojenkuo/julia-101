@@ -22,8 +22,7 @@
 - [起步走](01-getting-started.slides.html)
 - [資料型態](02-data-types.slides.html)
 - [流程控制：條件判斷與 while](03-control-flow-conditionals-while.slides.html)
-- [資料結構]()
-- [流程控制：for]()
+- [資料結構與流程控制：for]()
 - [程式封裝：自訂函數]()
 - [常用套件]()
 
