@@ -21,9 +21,10 @@
 - [關於](00-about.slides.html)
 - [起步走](01-getting-started.slides.html)
 - [資料型態](02-data-types.slides.html)
-- [流程控制](03-control-flow-conditionals.slides.html)
+- [流程控制：條件判斷與 while](03-control-flow-conditionals-while.slides.html)
+- [資料結構]()
+- [流程控制：for]()
 - [程式封裝：自訂函數]()
-- [程式封裝：自訂結構]()
 - [常用套件]()
 
 ### 延伸閱讀
@@ -32,4 +33,4 @@
 
 ### 近期課程錄影清單
 
-- [312 期 Julia 程式語言入門 | 以範例為主（假日專題班）](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWWndX_ppiDG8KMv6Jft7hm)
+- [312 期 Julia 程式語言入門 | 以範例為主（假日專題班）]()
