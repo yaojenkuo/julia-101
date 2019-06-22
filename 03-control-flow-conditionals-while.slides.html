@@ -13254,6 +13254,7 @@ a.anchor-link {
 <h2 id="&#22823;&#32177;">&#22823;&#32177;<a class="anchor-link" href="#&#22823;&#32177;">&#182;</a></h2><ul>
 <li><code>if</code></li>
 <li><code>if else</code></li>
+<li><code>?...:...</code> 條件運算符</li>
 <li><code>if elseif else</code></li>
 <li><code>while</code></li>
 </ul>
@@ -13273,11 +13274,11 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#22914;&#20309;&#23531;-if">&#22914;&#20309;&#23531; <code>if</code><a class="anchor-link" href="#&#22914;&#20309;&#23531;-if">&#182;</a></h2><ul>
 <li>保留字 <code>if</code></li>
-<li><code>Bool</code></li>
+<li><code>EXPR</code></li>
 <li>保留字 <code>end</code></li>
 </ul>
-<div class="highlight"><pre><span></span><span class="k">if</span> <span class="kt">Bool</span>
-    <span class="c"># do something if Bool is evaluated as true</span>
+<div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">EXPR</span>
+    <span class="c"># do something if EXPR is evaluated as true</span>
 <span class="k">end</span>
 </pre></div>
 
@@ -13332,18 +13333,38 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#22914;&#20309;&#23531;-if-else">&#22914;&#20309;&#23531; <code>if else</code><a class="anchor-link" href="#&#22914;&#20309;&#23531;-if-else">&#182;</a></h2><ul>
 <li>保留字 <code>if</code> 與 <code>else</code></li>
-<li><code>Bool</code></li>
+<li><code>EXPR</code></li>
 <li>保留字 <code>end</code></li>
 </ul>
-<div class="highlight"><pre><span></span><span class="k">if</span> <span class="kt">Bool</span>
-    <span class="c"># do something if Bool is evaluated as true</span>
+<div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">EXPR</span>
+    <span class="c"># do something if EXPR is evaluated as true</span>
 <span class="k">else</span>
-    <span class="c"># do something if Bool is evaluated as false</span>
+    <span class="c"># do something if EXPR is evaluated as false</span>
 <span class="k">end</span>
 </pre></div>
 
 </div>
 </div>
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">movie_title</span> <span class="o">=</span> <span class="s">&quot;Avengers: Endgame&quot;</span>
+<span class="n">movie_rating</span> <span class="o">=</span> <span class="mf">8.7</span>
+
+<span class="k">if</span> <span class="n">movie_rating</span> <span class="o">&gt;</span> <span class="mi">8</span>
+    <span class="n">println</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$movie_title</span><span class="s"> 評分 </span><span class="si">$movie_rating</span><span class="s"> 超過 8 分就去電影院看！&quot;</span><span class="p">)</span>
+<span class="k">else</span>
+    <span class="n">println</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$movie_title</span><span class="s"> 評分 </span><span class="si">$movie_rating</span><span class="s"> 小於 8 分就不去電影院看！&quot;</span><span class="p">)</span>
+<span class="k">end</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -13368,6 +13389,58 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="?...:...-&#26781;&#20214;&#36939;&#31639;&#31526;"><code>?...:...</code> &#26781;&#20214;&#36939;&#31639;&#31526;<a class="anchor-link" href="#?...:...-&#26781;&#20214;&#36939;&#31639;&#31526;">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="?...:...-&#26781;&#20214;&#36939;&#31639;&#31526;"><code>?...:...</code> &#26781;&#20214;&#36939;&#31639;&#31526;<a class="anchor-link" href="#?...:...-&#26781;&#20214;&#36939;&#31639;&#31526;">&#182;</a></h2><ul>
+<li>保留字 <code>?</code> 與 <code>:</code></li>
+<li><code>EXPR</code></li>
+</ul>
+<div class="highlight"><pre><span></span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">movie_title</span> <span class="o">=</span> <span class="s">&quot;Avengers: Endgame&quot;</span>
+<span class="n">movie_rating</span> <span class="o">=</span> <span class="mf">8.7</span>
+
+<span class="n">movie_rating</span> <span class="o">&gt;</span> <span class="mi">8</span> <span class="o">?</span> <span class="n">println</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$movie_title</span><span class="s"> 評分 </span><span class="si">$movie_rating</span><span class="s"> 超過 8 分就去電影院看！&quot;</span><span class="p">)</span> <span class="o">:</span> <span class="n">println</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$movie_title</span><span class="s"> 評分 </span><span class="si">$movie_rating</span><span class="s"> 小於 8 分就不去電影院看！&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">movie_title</span> <span class="o">=</span> <span class="s">&quot;Avengers: Age of Ultron&quot;</span>
+<span class="n">movie_rating</span> <span class="o">=</span> <span class="mf">7.3</span>
+
+<span class="n">movie_rating</span> <span class="o">&gt;</span> <span class="mi">8</span> <span class="o">?</span> <span class="n">println</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$movie_title</span><span class="s"> 評分 </span><span class="si">$movie_rating</span><span class="s"> 超過 8 分就去電影院看！&quot;</span><span class="p">)</span> <span class="o">:</span> <span class="n">println</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$movie_title</span><span class="s"> 評分 </span><span class="si">$movie_rating</span><span class="s"> 小於 8 分就不去電影院看！&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="if-elseif-else"><code>if elseif else</code><a class="anchor-link" href="#if-elseif-else">&#182;</a></h2>
 </div>
 </div>
@@ -13377,20 +13450,64 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#22914;&#20309;&#23531;-if-elseif-else">&#22914;&#20309;&#23531; <code>if elseif else</code><a class="anchor-link" href="#&#22914;&#20309;&#23531;-if-elseif-else">&#182;</a></h2><ul>
 <li>保留字 <code>if</code>、<code>elseif</code> 與 <code>else</code></li>
-<li><code>Bool</code></li>
+<li><code>EXPR</code></li>
 <li>保留字 <code>end</code></li>
 </ul>
-<div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">Bool_1</span>
-    <span class="c"># do something if Bool_1 is evaluated as true</span>
+<div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">EXPR_1</span>
+    <span class="c"># do something if EXPR_1 is evaluated as true</span>
 <span class="k">elseif</span> <span class="n">Bool_2</span>
-    <span class="c"># do something if Bool_2 is evaluated as true</span>
+    <span class="c"># do something if EXPR_2 is evaluated as true</span>
 <span class="k">else</span>
-    <span class="c"># do something if both Bool_1 and Bool_2 are evaluated as false</span>
+    <span class="c"># do something if both EXPR_1 and EXPR_2 are evaluated as false</span>
 <span class="k">end</span>
 </pre></div>
 
 </div>
 </div>
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">movie_title</span> <span class="o">=</span> <span class="s">&quot;Avengers: Endgame&quot;</span>
+<span class="n">movie_rating</span> <span class="o">=</span> <span class="mf">8.7</span>
+
+<span class="k">if</span> <span class="n">movie_rating</span> <span class="o">&gt;</span> <span class="mi">8</span>
+    <span class="n">println</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$movie_title</span><span class="s"> 評分 </span><span class="si">$movie_rating</span><span class="s"> 超過 8 分就去電影院看！&quot;</span><span class="p">)</span>
+<span class="k">elseif</span> <span class="n">movie_rating</span> <span class="o">&gt;</span> <span class="mi">7</span>
+    <span class="n">println</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$movie_title</span><span class="s"> 評分 </span><span class="si">$movie_rating</span><span class="s"> 超過 7 分可以租 DVD 看！&quot;</span><span class="p">)</span>
+<span class="k">else</span>
+    <span class="n">println</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$movie_title</span><span class="s"> 評分 </span><span class="si">$movie_rating</span><span class="s"> 低於 7 分就不要看了！&quot;</span><span class="p">)</span>
+<span class="k">end</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">movie_title</span> <span class="o">=</span> <span class="s">&quot;Avengers: Age of Ultron&quot;</span>
+<span class="n">movie_rating</span> <span class="o">=</span> <span class="mf">7.3</span>
+
+<span class="k">if</span> <span class="n">movie_rating</span> <span class="o">&gt;</span> <span class="mi">8</span>
+    <span class="n">println</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$movie_title</span><span class="s"> 評分 </span><span class="si">$movie_rating</span><span class="s"> 超過 8 分就去電影院看！&quot;</span><span class="p">)</span>
+<span class="k">elseif</span> <span class="n">movie_rating</span> <span class="o">&gt;</span> <span class="mi">7</span>
+    <span class="n">println</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$movie_title</span><span class="s"> 評分 </span><span class="si">$movie_rating</span><span class="s"> 超過 7 分可以租 DVD 看！&quot;</span><span class="p">)</span>
+<span class="k">else</span>
+    <span class="n">println</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$movie_title</span><span class="s"> 評分 </span><span class="si">$movie_rating</span><span class="s"> 低於 7 分就不要看了！&quot;</span><span class="p">)</span>
+<span class="k">end</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -13464,12 +13581,12 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#22914;&#20309;&#23531;-while">&#22914;&#20309;&#23531; <code>while</code><a class="anchor-link" href="#&#22914;&#20309;&#23531;-while">&#182;</a></h2><ul>
 <li>保留字 <code>while</code></li>
-<li><code>Bool</code></li>
+<li><code>EXPR</code></li>
 <li>保留字 <code>end</code></li>
 </ul>
 <div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="kt">Bool</span>
-    <span class="c"># do something repeatedly if Bool is evaluated as true</span>
+<span class="k">while</span> <span class="n">EXPR</span>
+    <span class="c"># do something repeatedly if EXPR is evaluated as true</span>
     <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">end</span>
 </pre></div>
