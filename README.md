@@ -23,7 +23,7 @@
 - [資料型態](02-data-types.slides.html)
 - [流程控制：條件判斷與 while](03-control-flow-conditionals-while.slides.html)
 - [資料結構與流程控制：for](04-data-structures-for.slides.html)
-- [程式封裝：自訂函數]()
+- [程式封裝：自訂函數](05-code-packaging-functions.slides.html)
 - [常用套件]()
 
 ### 延伸閱讀
