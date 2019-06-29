@@ -25,7 +25,7 @@
 - [資料結構與流程控制：for](04-data-structures-for.slides.html)
 - [程式封裝：自訂函數](05-code-packaging-functions.slides.html)
 - [常用套件：DataFrames.jl](06-useful-packages-dataframe.slides.html)
-- [常用套件：Gadfly.jl]()
+- [常用套件：Gadfly.jl](07-useful-packages-gadfly.slides.html)
 
 ### 延伸閱讀
 
