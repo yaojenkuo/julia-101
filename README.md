@@ -33,4 +33,5 @@
 
 ### 近期課程錄影清單
 
+- [318 期 Julia 程式語言入門 - 以範例為主（假日專題班）](https://www.youtube.com/playlist?list=PLEq7iw5uOtuUJDrIDDOR2GPSNFuTZ2Ai6)
 - [312 期 Julia 程式語言入門 - 以範例為主（假日專題班）](https://www.youtube.com/playlist?list=PLEq7iw5uOtuU-zU66pGM_aUV6gAQh1m4R)
